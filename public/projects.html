@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sanjana Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--bg-color);
+            overflow: hidden;
+        }
+
+        .hold-on-container {
+            text-align: center;
+        }
+
+        .back-btn {
+            margin-top: 2rem;
+            display: inline-block;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-decoration: none;
+            border: 1px solid var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sanjana projects" class="logo-img">
+            <span>Sanjana Projects</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="projects.html" class="active">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-th"></i>
+        </div>
+    </header>
+
+    <div class="hold-on-container">
+        <h1 class="bounce-text">Hold On !</h1>
+        <p style="color: var(--text-muted); margin-top: 1rem;">Projects are being loaded...</p>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle logic for this page
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+
+        if (menuIcon) {
+            menuIcon.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                const icon = menuIcon.querySelector('i');
+                if (nav.classList.contains('active')) {
+                    icon.classList.remove('fa-th');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-th');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

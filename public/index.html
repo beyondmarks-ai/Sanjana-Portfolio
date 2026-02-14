@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint - Digital Creative Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sanjana projects" class="logo-img">
+            <span>Sanjana Projects</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-th"></i>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>I'm <span style="color: var(--primary-color)">Sanjana Kumbar</span></h1>
+                <h1 class="text-silver-gradient"> A Vibe Coder</h1>
+                <a href="#contact" class="btn">GETTING STARTED <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image-v2.png" alt="Sanjana Kumbar - Vibe Coder">
+            </div>
+        </section>
+
+        <!-- Placeholder Sections for portfolio completeness -->
+        <section id="about">
+            <div class="container about-container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p class="lead-text">
+                        Welcome to my digital workspace. I am a passionate developer dedicated to crafting functional
+                        and visually stunning web experiences.
+                    </p>
+                    <p>
+                        This portfolio is a curated showcase of my technical journey and creative projects.
+
+                        <br><br>
+                        <strong>Interested in my projects?</strong><br>
+                        All projects displayed here are available for use or purchase. If you find a solution that fits
+                        your needs, let's connect.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>SMMPU Ind PU College</h3>
+                            <h4>Bidar</h4>
+                            <p>Completed Pre-University</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h3>GND Engineering College</h3>
+                            <h4>Bidar</h4>
+                            <p>Engineering Studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Sanjana Projects</span>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:Sanjanakumbar21@gmail.com" class="footer-link" id="email-trigger" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sanjana-kumbar-281a4b3a1" target="_blank" class="footer-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Sanjanaprojects21" target="_blank" class="footer-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Sanjana Projects reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Email Popup Modal -->
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Get in Touch</h2>
+            <p>Send me an email directly or copy the address.</p>
+            <div class="email-display">
+                <span id="email-address">Sanjanakumbar21@gmail.com</span>
+                <button id="copy-email" class="icon-btn" title="Copy to Clipboard">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+            <div class="modal-actions">
+                <a href="mailto:Sanjanakumbar21@gmail.com" class="btn modal-btn">Open Mail App <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
